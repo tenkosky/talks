@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css"  rel="stylesheet" href="../js/highlight.js/styles/tomorrow-night-bright.css">
+    <script type="text/javascript" src="../js/highlight.js/highlight.pack.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    <script type="text/javascript" src="../mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript" src="../js/d3.v3.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
+
+    <script type="text/javascript">
+      var substeps = ['one', 'two','three','four','five'];
+
+      function step(cur_step) {
+        d3.select("#" + cur_step).style("display", "inherit")
+      };
+    </script>
+
+  </head>
+  <body>
+	
+    <h2>Combinatorial Solution</h2>
+
+    <div>
+		<font color="blue">Laman's Theorem:</font> A drawing of $G$ is rigid (in the plane) if and only if there a subest of edges $F\subseteq E$ such that
+    </div>
+    <p id="one" style="display:none">
+      1) $|F|=2|V|-3$
+    </p>
+    <p id="two" style="display:none">
+      Needs enough edges (relatively small)
+    </p>
+    <p id="three" style="display:none">
+      2) $|F'|\leq 2|V(F')|-3$ for all $F'\subseteq F$
+    </p>
+    <p id="four" style="display:none">
+      Edges can't be in a clump
+    </p>
+
+    <div id="five" style="display:none">
+      <br>
+		<font color="blue">Example:</font> 
+      Cargo Bridge
+	</div>
+
+  </body>
+</html>

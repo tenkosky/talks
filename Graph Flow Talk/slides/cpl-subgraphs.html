@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css"  rel="stylesheet" href="../js/highlight.js/styles/tomorrow-night-bright.css">
+    <script type="text/javascript" src="../js/highlight.js/highlight.pack.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    <script type="text/javascript" src="../mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style type="text/css">
+     
+    </style>
+    <script type="text/javascript" src="../js/d3.v3.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
+
+    <script type="text/javascript">
+      var substeps = ['one', 'two','three','four'];
+
+      function step(cur_step) {
+        d3.select("#" + cur_step).style("display", "inherit")
+      };
+    </script>
+
+  </head>
+  <body>
+	
+    <h2>Slope Relations</h2>
+
+    <div>
+		Let $G$ be a graph
+    </div>
+    
+    <p id="one" style="display:none">
+      Get tree polynomial $\tau_H$ for each $H\subseteq G$ with coupled spanning trees
+    </p>
+    
+    <p id="two" style="display:none">
+      Slope relations are given by all tree polynomials of all subgraphs with coupled spanning trees
+    </p>
+    
+    <p id="three" style="display:none">
+      For the algebraists:
+    </p>
+    
+    <p id="four" style="display:none">
+      $I=(\tau_H~|~H\subseteq G~\textrm{has coupled spanning trees})$
+      $\phantom{I}\subseteq k[m_e~|~e\in G]$
+    </p>
+    
+   
+    
+
+
+  </body>
+</html>

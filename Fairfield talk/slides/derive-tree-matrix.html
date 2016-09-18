@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css"  rel="stylesheet" href="../js/highlight.js/styles/tomorrow-night-bright.css">
+    <script type="text/javascript" src="../js/highlight.js/highlight.pack.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    <script type="text/javascript" src="../mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style type="text/css">
+     
+    </style>
+    <script type="text/javascript" src="../js/d3.v3.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
+
+    <script type="text/javascript">
+      var substeps = ['one', 'two','three']//,'four','five'];
+
+      function step(cur_step) {
+        d3.select("#" + cur_step).style("display", "inherit")
+      };
+    </script>
+
+  </head>
+  <body>
+	
+    <h2>Slope Relations</h2>
+
+    <div>
+		Let $C$ be a cycle in $G$ and add the lines in point-slope form
+    </div>
+    
+    <br>
+    
+    <p id="one" style="display:none">
+      $\small{\displaystyle\sum_{e\in C}y_{e_1}-y_{e_2}=\sum_{e\in C}m_{e}(x_{e_1}-x_{e_2})}$
+    </p>
+    
+    <br>
+    
+    <p id="two" style="display:none">
+      $\small{\displaystyle\phantom{\sum_{e\in C}y_{e_1}-y} 0=\sum_{e\in C}m_{e}(x_{e_1}-x_{e_2})}$
+    </p>
+    
+    <br>
+   
+    <p id="three" style="display:none">
+      We eliminated the $y$-coordinates
+    </p>
+   
+    
+    
+    
+    
+    
+    
+    <p id="six" style="display:none">
+      <font color="blue">Also:</font>
+      $\small{\displaystyle\sum_{e\in C}(x_{e_1}-x_{e_2})=0}$
+    </p>
+    
+    <p id="seven" style="display:none">
+      Fix an edge $f\in C$ and combine above:
+    </p>
+    
+    <p id="eight" style="display:none">
+          $\small{\displaystyle\sum_{e\in C\setminus\{f\}}m_e(x_{e_1}-x_{e_2})-m_f\sum_{e\in C\setminus\{f\}}(x_{e_1}-x_{e_2})=0}$
+    </p>
+    
+   
+    
+
+
+  </body>
+</html>

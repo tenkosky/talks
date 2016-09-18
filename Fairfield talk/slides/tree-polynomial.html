@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css"  rel="stylesheet" href="../js/highlight.js/styles/tomorrow-night-bright.css">
+    <script type="text/javascript" src="../js/highlight.js/highlight.pack.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    <script type="text/javascript" src="../mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style type="text/css">
+     
+    </style>
+    <script type="text/javascript" src="../js/d3.v3.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
+
+    <script type="text/javascript">
+      var substeps = ['one', 'two','three'];
+
+      function step(cur_step) {
+        d3.select("#" + cur_step).style("display", "inherit")
+      };
+    </script>
+
+  </head>
+  <body>
+	
+    <h2>Tree Polynomial</h2>
+
+    <div>
+		Slopes are valid if and only if $\det(M_T)=0$
+    </div>
+    
+    <p id="one" style="display:none">
+      <font color="blue">Tree polynomial:</font>
+      <br>
+      $\tau = \det(M_T)$
+    </p>
+    
+    <br>
+    
+    <p id="two" style="display:none">
+      But wait!
+    </p>
+    
+    <br>
+    
+    <p id="three" style="display:none">
+      Matrix needs to be square
+    </p>
+    
+    <p id="four" style="display:none">
+      
+    </p>
+    
+   
+    
+
+
+  </body>
+</html>
